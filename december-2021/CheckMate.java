@@ -45,7 +45,7 @@ class CheckMate
     	    String numTestCases=br.readLine();
             int T=Integer.parseInt(numTestCases);
     	    
-    		while( T-- > 0 ){
+    		while( T > 0 ){
 
                 String kingPos=br.readLine();
                 String[] kingPosStr = kingPos.split(" ", 2);
@@ -72,6 +72,7 @@ class CheckMate
                         rook2_x,rook2_y
                     )
                 );
+                T--;
     		}
 		}catch(Exception e){
 			return;

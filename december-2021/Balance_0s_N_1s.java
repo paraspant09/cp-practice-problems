@@ -42,12 +42,13 @@ class Balance_0s_N_1s
     	    
     	    int numTestCases=ob.nextInt();
     	    
-    		while( numTestCases-- > 0 ){
+    		while( numTestCases > 0 ){
     		    int lengthOfString=ob.nextInt();
     		    
     		    String str=ob.next();
     		    
     		    System.out.println(Balancer(lengthOfString,str));
+                numTestCases--;
     		}
 		}catch(Exception e){
 			return;

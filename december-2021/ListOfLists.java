@@ -14,7 +14,7 @@ class ListOfLists
     	    
     	    int numTestCases=ob.nextInt();
     	    
-    		while( numTestCases-- > 0 ){
+    		while( numTestCases > 0 ){
     		    int lengthOfArray=ob.nextInt();
     		    
     		    int[] Array=new int[lengthOfArray];
@@ -42,6 +42,8 @@ class ListOfLists
     		        System.out.println(-1);
     		    else
     		        System.out.println(lengthOfArray-maxCount+1);
+				
+				numTestCases--;
     		}
 		}catch(Exception e){
 			return;

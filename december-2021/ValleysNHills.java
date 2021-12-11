@@ -44,11 +44,12 @@ public class ValleysNHills
     	    
     	    int numTestCases=ob.nextInt();
     	    
-    		while( numTestCases-- > 0 ){
+    		while( numTestCases > 0 ){
     		    int noOfHills=ob.nextInt();
 				int noOfValleys=ob.nextInt();
     		    
     		    findString(noOfHills,noOfValleys);
+				numTestCases--;
     		}
 		}catch(Exception e){
 			return;
